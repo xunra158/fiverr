@@ -1,0 +1,164 @@
+:root {
+    --green: #00b30c;
+    --gray1: #353537;
+    --gray2: #eaeaeb;
+    --gray3: #777777;
+}
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.header-scroll{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #ffffff;
+  border-bottom:  1px solid rgba(0,0,0,.1);
+  margin-top: -300px;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+.header-scroll.active{
+  margin-top: 0;
+  opacity: 1;
+}
+.header-scroll .nav-link{
+  color: #777777;
+}
+
+.header-scroll .btn-outline-success{
+  color: #00b30b!important;
+}
+.header-scroll .btn-outline-success:hover{
+  color: #ffffff;
+}
+
+.header{
+  background-image: url(../img/hero.jpg);
+  min-height: 30rem;
+background-size: cover;
+}
+
+.header .nav-link{
+  color: white;
+}
+
+.header .btn-outline-light:hover{
+  color: black!important;
+}
+
+.search-form{
+  min-height: 25rem;
+}
+
+.btn-success{
+  background: #00b30c!important;
+}
+
+.category{
+
+}
+
+.category h3{
+  font-size: 1.4rem;
+  font-weight: 400!important;
+}
+
+.category h3::before {
+  content:'';
+  display: block;
+  margin: 5px auto 20px auto;
+  height: 1px;
+  width: 60px;
+  background: #00b30c;
+  transition: width .3s ease;
+}
+
+.category:hover h3::before{
+  width: 180px;
+}
+
+.category p{
+  padding-top: 30px;
+  opacity: 0;
+  transition: all .3s ease;
+  color: #999999;
+}
+
+.category:hover p{
+  padding-top: 10px;
+  opacity: 1;
+}
+
+
+.bg-dark{
+  background: #353537!important;
+}
+
+.first-steps .row > div{
+  flex: 1 0 calc(50% - 1rem);
+}
+
+@media (min-width: 992px) {
+  .first-steps .row > div{
+      flex: 0 0 calc(20% - 1rem);
+  }
+}
+.first-steps .description{
+  height: 20rem;
+  background-size: cover;
+}
+.description p{
+  font-size: .9rem;
+}
+.description span{
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.logo{
+  background-image: url(../img/service_1.png);
+}
+.wordpress{
+  background-image: url(../img/service_5.png);
+}
+.audio{
+  background-image: url(../img/service_3.png);
+}
+.translate{
+  background-image: url(../img/service_4.png);
+}
+.social-media{
+  background-image: url(../img/service_2.png);
+}
+
+@media (min-width: 768px) {
+  .benefits .row{
+    min-height: 15rem;
+  }
+}
+
+
+.testimonials{
+  background-color: #eaeaeb;
+}
+.testimonials .carousel{
+  background-color: white;
+}
+.testimonials .carousel-item h4{
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.testimonials blockquote{
+  font-size: 1.8rem;
+  color: #676767;
+  font-style: italic;
+}
+
+.testimonials .carousel-item p{
+  font-size: .8rem;
+}
+
+.card-title{
+  font-size: 1.2rem;
+}
